@@ -1,6 +1,4 @@
 # Myonnaise 🍯
-[![CircleCI](https://circleci.com/gh/cortinico/myonnaise.svg?style=svg)](https://circleci.com/gh/cortinico/myonnaise) [![codecov](https://codecov.io/gh/cortinico/myonnaise/branch/master/graph/badge.svg)](https://codecov.io/gh/cortinico/myonnaise) [ ![Download](https://api.bintray.com/packages/cortinico/maven/myonnaise/images/download.svg) ](https://bintray.com/cortinico/maven/myonnaise/_latestVersion) ![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg) [![Twitter](https://img.shields.io/badge/Twitter-@cortinico-blue.svg?style=flat)](http://twitter.com/cortinico)
-
 <p align="center">
     <img width="30%" src="https://raw.githubusercontent.com/cortinico/myonnaise/master/icon_hires.png" alt="projectlogo">
 </p>
@@ -8,8 +6,6 @@
 An Android library to interact with your Thalmic **Myo**, written in [**Kotlin**](https://github.com/JetBrains/kotlin) and using [**RxJava2**](https://github.com/ReactiveX/RxJava). 
 
 This repo contains also a **sample app** that showcases the usage of the library: Myo EMG Visualizer. With this app you can stream EMG Raw data from your device and **save it as a CSV**. The app is also available on the play store:
-
-<a href='https://play.google.com/store/apps/details?id=it.ncorti.emgvisualizer&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' width="20%" src='https://play.google.com/intl/en_gb/badges/images/generic/en_badge_web_generic.png'/></a>
 
 **DISCLAIMER: If you don't know what a Myo is, please go here: [support.getmyo.com](https://support.getmyo.com/). Please note that you need a Myo in order to use this library/app.**
 
@@ -35,12 +31,6 @@ This repo contains also a **sample app** that showcases the usage of the library
 ## Getting Started 👣
 
 **Myonnaise** is distributed through [JCenter](https://bintray.com/bintray/jcenter?filterByPkgName=myonnaise). To use it you need to add the following **Gradle dependency** to your **android app gradle file** (NOT the root file).
-
-```groovy
-dependencies {
-   implementation 'com.ncorti:myonnaise:1.0.0'
-}
-```
 
 ## Example 🚸
 
@@ -269,7 +259,3 @@ Make sure your tests are all green ✅ locally before submitting PRs.
 * When reporting a new Issue, make sure to attach **Screenshots** of the problem you are reporting. 
 * Debugging 
 * When submitting a new PR, make sure tests are all green. Write new tests if necessary (would be great if the code coverage doesn't decrease).
-
-## License 📄
-
-This project is licensed under the MIT License - see the [License](License) file for details

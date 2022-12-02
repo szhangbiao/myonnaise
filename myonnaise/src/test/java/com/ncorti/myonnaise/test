@@ -1,0 +1,10 @@
+Service UUID = 00001800-0000-1000-8000-00805f9b34fb,mCharacteristics size = 3, EMG UUID = d5060005-a904-deb9-4748-2c7f4a124842
+Service UUID = 00001801-0000-1000-8000-00805f9b34fb,mCharacteristics size = 1, EMG UUID = d5060005-a904-deb9-4748-2c7f4a124842
+Service UUID = 0000180a-0000-1000-8000-00805f9b34fb,mCharacteristics size = 1, EMG UUID = d5060005-a904-deb9-4748-2c7f4a124842
+Service UUID = 0000180f-0000-1000-8000-00805f9b34fb,mCharacteristics size = 1, EMG UUID = d5060005-a904-deb9-4748-2c7f4a124842
+Service UUID = d5060001-a904-deb9-4748-2c7f4a124842,mCharacteristics size = 3, EMG UUID = d5060005-a904-deb9-4748-2c7f4a124842
+Service UUID = d5060002-a904-deb9-4748-2c7f4a124842,mCharacteristics size = 2, EMG UUID = d5060005-a904-deb9-4748-2c7f4a124842
+Service UUID = d5060003-a904-deb9-4748-2c7f4a124842,mCharacteristics size = 1, EMG UUID = d5060005-a904-deb9-4748-2c7f4a124842
+Service UUID = d5060004-a904-deb9-4748-2c7f4a124842,mCharacteristics size = 1, EMG UUID = d5060005-a904-deb9-4748-2c7f4a124842
+Service UUID = d5060005-a904-deb9-4748-2c7f4a124842,mCharacteristics size = 4, EMG UUID = d5060005-a904-deb9-4748-2c7f4a124842
+Service UUID = d5060006-a904-deb9-4748-2c7f4a124842,mCharacteristics size = 1, EMG UUID = d5060005-a904-deb9-4748-2c7f4a124842

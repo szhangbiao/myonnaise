@@ -21,6 +21,7 @@ object Versions {
     const val retrofit = "2.9.0"
     const val okhttp = "4.10.0"
     const val gson = "2.8.9"
+    const val exoPlayer = "2.13.3"
 }
 
 object Libs {
@@ -51,4 +52,6 @@ object Libs {
     const val gsonConverter = "com.squareup.retrofit2:converter-gson:2.1.0"
     const val rxjavaAdapter = "com.squareup.retrofit2:adapter-rxjava2:2.6.2"
     const val gson = "com.google.code.gson:gson:${Versions.gson}"
+    const val playerCore = "com.google.android.exoplayer:exoplayer-core:${Versions.exoPlayer}"
+    const val playerUI = "com.google.android.exoplayer:exoplayer-ui:${Versions.exoPlayer}"
 }

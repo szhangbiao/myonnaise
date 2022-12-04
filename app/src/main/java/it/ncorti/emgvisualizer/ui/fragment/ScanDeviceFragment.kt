@@ -3,6 +3,7 @@ package it.ncorti.emgvisualizer.ui.fragment
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -21,6 +22,7 @@ import it.ncorti.emgvisualizer.databinding.LayoutScanDeviceBinding
 import it.ncorti.emgvisualizer.ui.contract.ScanDeviceContract
 import it.ncorti.emgvisualizer.ui.MainActivity
 import it.ncorti.emgvisualizer.model.Device
+import it.ncorti.emgvisualizer.ui.ConvertActivity
 import javax.inject.Inject
 
 const val ADD_ITEM_FADE_MS: Long = 1000
@@ -53,6 +55,9 @@ class ScanDeviceFragment : BaseFragment<ScanDeviceContract.Presenter>(), ScanDev
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.fabScan.setOnClickListener { scanDevicePresenter.onScanToggleClicked() }
+        binding.fabConvert.setOnClickListener {
+            startActivity(Intent(requireContext(), ConvertActivity::class.java))
+        }
         listDeviceAdapter = DeviceAdapter(object : DeviceSelectedListener {
             override fun onDeviceSelected(v: View, position: Int) {
                 scanDevicePresenter.onDeviceSelected(position)

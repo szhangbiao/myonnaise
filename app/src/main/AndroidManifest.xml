@@ -29,6 +29,8 @@
         <activity android:name=".ui.IntroActivity" />
 
         <activity android:name=".ui.MainActivity" />
+        
+        <activity android:name=".ui.ConvertActivity" />
 
         <activity android:name=".ui.SplashActivity">
             <intent-filter>

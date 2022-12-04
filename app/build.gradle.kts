@@ -53,4 +53,7 @@ dependencies {
     implementation(Libs.interceptor)
     implementation(Libs.gsonConverter)
     implementation(Libs.rxjavaAdapter)
+
+    implementation(Libs.playerCore)
+    implementation(Libs.playerUI)
 }

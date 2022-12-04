@@ -1,5 +1,6 @@
 package it.ncorti.emgvisualizer.di
 
+import android.app.Activity
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
@@ -7,7 +8,9 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ActivityComponent
 import dagger.hilt.android.components.FragmentComponent
 import dagger.hilt.components.SingletonComponent
+import it.ncorti.emgvisualizer.ui.ConvertActivity
 import it.ncorti.emgvisualizer.ui.contract.ControlDeviceContract
+import it.ncorti.emgvisualizer.ui.contract.ConvertTextContract
 import it.ncorti.emgvisualizer.ui.contract.ExportContract
 import it.ncorti.emgvisualizer.ui.fragment.ControlDeviceFragment
 import it.ncorti.emgvisualizer.ui.presenter.ExportPresenter
@@ -18,6 +21,7 @@ import it.ncorti.emgvisualizer.ui.contract.ScanDeviceContract
 import it.ncorti.emgvisualizer.ui.fragment.ExportFragment
 import it.ncorti.emgvisualizer.ui.fragment.ScanDeviceFragment
 import it.ncorti.emgvisualizer.ui.presenter.ControlDevicePresenter
+import it.ncorti.emgvisualizer.ui.presenter.ConvertTextPresenter
 import it.ncorti.emgvisualizer.ui.presenter.ScanDevicePresenter
 import javax.inject.Singleton
 
@@ -80,5 +84,21 @@ interface ViewModule {
             return ScanDeviceFragment.newInstance()
         }
     }
+}
 
+@InstallIn(ActivityComponent::class)
+@Module
+interface ActivityModule {
+    @Binds
+    fun bindConvertTextPresenter(convertTextPresenter: ConvertTextPresenter): ConvertTextContract.Presenter
+
+    @Binds
+    fun bindConvertTextView(convertActivity: ConvertActivity): ConvertTextContract.View
+
+    companion object {
+        @Provides
+        fun provideActivity(activity: Activity): ConvertActivity {
+            return activity as ConvertActivity
+        }
+    }
 }
